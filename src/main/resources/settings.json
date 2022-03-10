@@ -1,12 +1,12 @@
 {
   "platformName": "android",
   "isRemote": true,
-  "remoteConnectionUrl": "http://127.0.0.1:4723/wd/hub",
+  "remoteConnectionUrl": "http://0.0.0.0:4723/wd/hub",
   "screensLocation": "integration",
   "driverSettings": {
     "android": {
       "deviceKey": "Android_Emulator",
-      "applicationPath": "./src/test/resources/apps/ApiDemos-debug.apk",
+      "applicationPath": "./src/test/resources/apps/calculator.apk",
       "capabilities": {
         "platformName": "Android",
         "automationName": "UIAutomator2",
