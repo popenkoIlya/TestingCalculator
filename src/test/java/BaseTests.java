@@ -1,8 +1,9 @@
 import aquality.appium.mobile.application.AqualityServices;
 import org.junit.Before;
+import org.junit.BeforeClass;
 
 public class BaseTests {
-    @Before
+    @BeforeClass
     public void setUp() {
         AqualityServices.getApplication();
     }
