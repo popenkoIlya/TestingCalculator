@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 
 public class MainForm extends Screen {
 
-    public class Function {
+    public static class Function {
 
         public static final String plus = "_add";
         public static final String minus = "_sub";
@@ -18,6 +18,8 @@ public class MainForm extends Screen {
         public static final String divide = "_divide";
         public static final String clear = "_clear";
         public static final String changeSign = "_para2";
+        public static final String dot = "_dot";
+        public static final String mod = "_para1";
     }
 
     private String numberLocatorTemplate = "com.example.new_sample:id/button%s";
@@ -28,7 +30,7 @@ public class MainForm extends Screen {
             AqualityServices.getElementFactory().getLabel(By.id("com.example.new_sample:id/output"),"inputTextBox");
 
     public MainForm() {
-        super(By.xpath("//androidx.constraintlayout.widget.ConstraintLayout[@tools:context='.MainActivity']"), "MainScreen");
+        super(By.id("com.example.new_sample:id/action_bar_root"), "MainScreen");
     }
 
     public void clickOnArithmeticButton(String text){
